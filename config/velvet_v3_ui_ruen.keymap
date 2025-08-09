@@ -89,7 +89,7 @@
                 <&macro_param_1to1 &mo MACRO_PLACEHOLDER>;
 
             label = "SEN_MO";
-            wait-ms = <200>;
+            wait-ms = <500>;
         };
     };
 
