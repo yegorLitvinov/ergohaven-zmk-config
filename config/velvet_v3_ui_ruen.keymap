@@ -128,9 +128,9 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &en HASH      &en CARET     &kp EQUAL       &en RU_DOUBLE_QUOTES  &en LEFT_BRACE                         &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
+&trans  &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                         &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
 &trans  &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en DOT               &kp LEFT_PARENTHESIS                   &kp RIGHT_PARENTHESIS  &en COMMA         &kp MINUS         &en AMPS    &kp SLASH      &trans
-&trans  &en TILDE     &kp PLUS      &kp RU_COLON    &en LESS_THAN         &en LEFT_BRACKET                       &en RIGHT_BRACKET      &en GREATER_THAN  &kp SEMICOLON     &en AT      &en PIPE       &trans
+&trans  &en TILDE     &kp PLUS      &en COLON       &en LESS_THAN         &en LEFT_BRACKET                       &en RIGHT_BRACKET      &en GREATER_THAN  &kp RU_SEMICOLON  &en AT      &en PIPE       &trans
                       &trans        &trans          &trans                &trans                &mo 5    &trans  &trans                 &trans            &en SINGLE_QUOTE  &en PRCNT
             >;
         };
