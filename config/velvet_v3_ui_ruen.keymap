@@ -98,9 +98,9 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E             &kp R             &kp T                           &kp Y  &kp U            &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D             &kp F             &kp G                           &kp H  &kp J            &kp K      &kp L     &kp SEMI  &kp RIGHT_CONTROL
-&kp LSHFT  &kp Z  &kp X     &kp C             &kp V             &kp B                           &kp N  &kp M            &kp COMMA  &kp DOT   &kp SQT   &kp RSHFT
+&kp ESC    &kp Q  &kp W     &kp E             &kp R             &kp T                           &kp Y  &kp U            &kp I      &kp O     &kp P       &kp BSPC
+&kp TAB    &kp A  &kp S     &kp D             &kp F             &kp G                           &kp H  &kp J            &kp K      &kp L     &kp GRAVE   &kp RIGHT_CONTROL
+&kp LSHFT  &kp Z  &kp X     &kp C             &kp V             &kp B                           &kp N  &kp M            &kp COMMA  &kp DOT   &caps_word  &kp RSHFT
                   &kp LALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mo 2    &kp RETURN  &mo 3  &cap_sen 6 LCLK  &kp LBKT   &kp RBKT
             >;
 
