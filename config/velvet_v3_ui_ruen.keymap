@@ -121,7 +121,7 @@
             bindings = <
 &trans  &kp N1  &kp N2    &kp N3         &kp N4         &kp N5                     &kp N6              &kp N7         &kp N8       &kp N9               &kp N0  &trans
 &trans  &trans  &trans    &en LG(GRAVE)  &kp LG(SPACE)  &kp RET                    &kp LEFT            &kp DOWN       &kp UP       &kp RIGHT            &trans  &trans
-&trans  &trans  &kp HOME  &kp INS        &kp END        &kp DEL                    &kp RC(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP  &kp RC(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &kp HOME  &kp INS        &kp END        &kp DEL                    &kp RA(LEFT_ARROW)  &kp PAGE_DOWN  &kp PAGE_UP  &kp RA(RIGHT_ARROW)  &trans  &trans
                 &trans    &trans         &trans         &trans   &trans    &trans  &mo 5               &trans         &trans       &trans
             >;
 
