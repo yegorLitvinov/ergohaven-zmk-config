@@ -92,5 +92,5 @@ include:
   # - board: ergohaven
   #   shield: k03_left_qube
 
-  # - board: ergohaven
-  #   shield: settings_reset
+  - board: ergohaven
+    shield: settings_reset
