@@ -98,10 +98,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E    &kp R             &kp T                           &kp Y  &kp U         &kp I      &kp O     &kp P       &kp BSPC
-&kp LCTRL  &kp A  &kp S     &kp D    &kp F             &kp G                           &kp H  &kp J         &kp K      &kp L     &kp GRAVE   &kp RIGHT_CONTROL
-&kp LSHFT  &kp Z  &kp X     &kp C    &kp V             &kp B                           &kp N  &kp M         &kp COMMA  &kp DOT   &caps_word  &kp RSHFT
-                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 2  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &kp LBKT   &kp RBKT
+&kp ESC    &kp Q  &kp W     &kp E    &kp R             &kp T                           &kp Y  &kp U         &kp I   &kp O   &kp P       &kp BSPC
+&kp LCTRL  &kp A  &kp S     &kp D    &kp F             &kp G                           &kp H  &kp J         &kp K   &kp L   &trans      &kp RIGHT_CONTROL
+&kp LSHFT  &kp Z  &kp X     &kp C    &kp V             &kp B                           &kp N  &kp M         &trans  &trans  &caps_word  &kp RSHFT
+                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 2  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &trans  &trans
             >;
 
             display-name = "Base";
