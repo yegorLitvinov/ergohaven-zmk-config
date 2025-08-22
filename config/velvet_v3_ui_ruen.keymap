@@ -27,25 +27,25 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <3 4 2>;
-            layers = <0>;
+            layers = <2>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <3 4 2>;
-            layers = <1>;
+            layers = <0>;
         };
 
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <2>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <2>;
         };
     };
 
@@ -71,7 +71,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_en>;
+            bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -80,7 +80,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &to_ru>;
+            bindings = <&to 2 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -108,25 +108,25 @@
     keymap {
         compatible = "zmk,keymap";
 
+        en {
+            bindings = <
+&kp ESC    &kp Q  &kp W     &kp E    &kp R             &kp T                           &kp Y  &kp U         &kp I      &kp O    &kp P       &kp BSPC
+&kp LCTRL  &kp A  &kp S     &kp D    &kp F             &kp G                           &kp H  &kp J         &kp K      &kp L    &kp SQT     &kp RIGHT_CONTROL
+&kp LSHFT  &kp Z  &kp X     &kp C    &kp V             &kp B                           &kp N  &kp M         &kp COMMA  &kp DOT  &caps_word  &kp RSHFT
+                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 3  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &kp TAB    &none
+            >;
+
+            display-name = "Base";
+        };
+
         ru {
             display-name = "Ru";
             bindings = <
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                           &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp LCTRL  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                           &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RIGHT_CONTROL
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &kp LALT              &kp TAB             &kp LEFT_COMMAND    &mo 2               &kp SPACE    &kp RETURN  &mo 4               &cap_sen 6 6               &kp TAB              &none
+                                    &kp LALT              &kp TAB             &kp LEFT_COMMAND    &mo 3               &kp SPACE    &kp RETURN  &mo 4               &cap_sen 6 6               &kp TAB              &none
             >;
-        };
-
-        en {
-            bindings = <
-&kp ESC    &kp Q  &kp W     &kp E    &kp R             &kp T                           &kp Y  &kp U         &kp I    &kp O  &kp P       &kp BSPC
-&kp LCTRL  &kp A  &kp S     &kp D    &kp F             &kp G                           &kp H  &kp J         &kp K    &kp L  &none       &kp RIGHT_CONTROL
-&kp LSHFT  &kp Z  &kp X     &kp C    &kp V             &kp B                           &kp N  &kp M         &none    &none  &caps_word  &kp RSHFT
-                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 2  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &kp TAB  &none
-            >;
-
-            display-name = "Base";
         };
 
         nav {
