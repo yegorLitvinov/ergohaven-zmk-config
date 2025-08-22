@@ -113,7 +113,7 @@
 &kp ESC    &kp Q  &kp W     &kp E    &kp R             &kp T                           &kp Y  &kp U         &kp I      &kp O    &kp P       &kp BSPC
 &kp LCTRL  &kp A  &kp S     &kp D    &kp F             &kp G                           &kp H  &kp J         &kp K      &kp L    &kp SQT     &kp RIGHT_CONTROL
 &kp LSHFT  &kp Z  &kp X     &kp C    &kp V             &kp B                           &kp N  &kp M         &kp COMMA  &kp DOT  &caps_word  &kp RSHFT
-                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 3  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &kp TAB    &none
+                  &kp LALT  &kp TAB  &kp LEFT_COMMAND  &mo 2  &kp SPACE    &kp RETURN  &mo 3  &cap_sen 6 6  &kp TAB    &none
             >;
 
             display-name = "Base";
@@ -125,7 +125,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                           &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSPC
 &kp LCTRL  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                           &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RIGHT_CONTROL
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                            &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RSHFT
-                                    &kp LALT              &kp TAB             &kp LEFT_COMMAND    &mo 3               &kp SPACE    &kp RETURN  &mo 4               &cap_sen 6 6               &kp TAB              &none
+                                    &kp LALT              &kp TAB             &kp LEFT_COMMAND    &mo 2               &kp SPACE    &kp RETURN  &mo 4               &cap_sen 6 6               &kp TAB              &none
             >;
         };
 
