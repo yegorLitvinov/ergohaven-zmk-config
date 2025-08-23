@@ -27,7 +27,7 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <3 4 2>;
-            layers = <2>;
+            layers = <1>;
         };
 
         cmbru {
@@ -39,13 +39,13 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <7 8>;
-            layers = <2>;
+            layers = <1>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <8 9>;
-            layers = <2>;
+            layers = <1>;
         };
     };
 
