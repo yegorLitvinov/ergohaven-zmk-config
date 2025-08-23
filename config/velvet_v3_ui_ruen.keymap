@@ -145,7 +145,7 @@
 &trans  &kp HASH      &kp CARET     &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &kp GRAVE         &kp EXCL          &kp DOLLAR  &kp BACKSLASH  &trans
 &trans  &kp QUESTION  &kp ASTERISK  &kp UNDERSCORE  &kp DOT            &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp COMMA         &kp MINUS         &kp AMPS    &kp SLASH      &trans
 &trans  &kp TILDE     &kp PLUS      &kp COLON       &kp LESS_THAN      &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp SEMICOLON     &kp AT      &kp PIPE       &trans
-                      &trans        &kp PERCENT     &trans             &trans                &trans    &trans  &trans                 &trans            &kp SINGLE_QUOTE  &mo 5
+                      &kp PERCENT   &trans          &trans             &trans                &trans    &trans  &trans                 &trans            &kp SINGLE_QUOTE  &mo 5
             >;
 
             display-name = "Symbols";
@@ -157,7 +157,7 @@
 &trans  &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                          &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
 &trans  &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en DOT               &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &en COMMA         &kp MINUS         &en AMPS    &kp SLASH      &trans
 &trans  &en TILDE     &kp PLUS      &en COLON       &en LESS_THAN         &en LEFT_BRACKET                        &en RIGHT_BRACKET      &en GREATER_THAN  &en SEMICOLON     &en AT      &en PIPE       &trans
-                      &trans        &en PERCENT     &trans                &trans                &trans    &trans  &trans                 &trans            &en SINGLE_QUOTE  &mo 5
+                      &en PERCENT   &trans          &trans                &trans                &trans    &trans  &trans                 &trans            &en SINGLE_QUOTE  &mo 5
             >;
         };
 
