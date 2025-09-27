@@ -16,10 +16,10 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <50>;
-            tapping-term-ms = <265>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <11 49 35 23 10 22 34 48 47 59 58 33 21 9 8 20 32 46 45 31 19 7 6 18 44 43 30 57 56 55>;
@@ -31,10 +31,10 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <50>;
-            tapping-term-ms = <265>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 5 17 16 15 14 13 12 24 25 26 27 28 29 42 41 40 39 38 37 36 50 51 52 53 54>;
