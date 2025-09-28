@@ -1,7 +1,7 @@
 ---
 include:
-  - board: ergohaven
-    shield: velvet_v3_ui_left
+  # - board: ergohaven
+  #   shield: velvet_v3_ui_left
   - board: ergohaven
     shield: velvet_v3_ui_right
     keymap: velvet_v3_ui_ruen
@@ -10,26 +10,13 @@ include:
     artifact-name: velvet_v3_ui_right_ruen-ergohaven-zmk
 
   - board: ergohaven
-    shield: op36_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: ergohaven
-    shield: op36_left
-    keymap: op36_ruen
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: op36_left_ruen-ergohaven-zmk
-  - board: ergohaven
-    shield: op36_right
-
-  - board: ergohaven
     shield: k03_left
     keymap: k03_ruen
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: k03_left_ruen-ergohaven-zmk
-  - board: ergohaven
-    shield: k03_right
+  # - board: ergohaven
+  #   shield: k03_right
 
-  - board: ergohaven
-    shield: settings_reset
+  # - board: ergohaven
+  #   shield: settings_reset
