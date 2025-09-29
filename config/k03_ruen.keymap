@@ -12,6 +12,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+
+        switch_tab: switch_tab {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SWITCH_TAB";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp RS(TAB)>;
+        };
     };
 
     combos {
@@ -106,21 +113,15 @@
 
         en {
             bindings = <
-&none             &kp N1  &kp N2  &kp N3   &kp N4        &kp N5                          &kp N6  &kp N7         &kp N8     &kp N9   &kp N0            &none
-&kp ESC           &kp Q   &kp W   &kp E    &kp R         &kp T                           &kp Y   &kp U          &kp I      &kp O    &kp P             &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D    &kp F         &kp G                           &kp H   &kp J          &kp K      &kp L    &kp SINGLE_QUOTE  &kp RCTRL
-&kp LSHFT         &kp Z   &kp X   &kp C    &kp V         &kp B   &none        &none      &kp N   &kp M          &kp COMMA  &kp DOT  &none             &kp RSHFT
-                          &trans  &kp TAB  &kp LEFT_GUI  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp RIGHT_GUI  &kp TAB    &trans
+&none             &kp N1  &kp N2    &kp N3    &kp N4   &kp N5                          &kp N6  &kp N7   &kp N8     &kp N9    &kp N0            &none
+&kp ESC           &kp Q   &kp W     &kp E     &kp R    &kp T                           &kp Y   &kp U    &kp I      &kp O     &kp P             &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A   &kp S     &kp D     &kp F    &kp G                           &kp H   &kp J    &kp K      &kp L     &kp SINGLE_QUOTE  &kp RCTRL
+&kp LSHFT         &kp Z   &kp X     &kp C     &kp V    &kp B   &none        &none      &kp N   &kp M    &kp COMMA  &kp DOT   &none             &kp RSHFT
+                          &kp LGUI  &kp LALT  &kp TAB  &mo 2   &kp SPACE    &kp ENTER  &mo 3   &kp TAB  &kp RALT   &kp RGUI
             >;
 
             display-name = "Base";
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
+            sensor-bindings = <&switch_tab>, <&inc_dec_kp DOWN UP>;
         };
 
         ru {
@@ -130,71 +131,79 @@
 &kp ESC           &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BACKSPACE
 &kp LEFT_CONTROL  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RIGHT_CONTROL
 &kp LSHFT         &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &none        &none      &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp RSHFT
-                                           &trans                &kp TAB             &kp LEFT_GUI        &mo 4               &kp SPACE    &kp ENTER  &mo 5               &kp RIGHT_GUI              &kp TAB              &trans
+                                           &kp LGUI              &kp LALT            &kp TAB             &mo 4               &kp SPACE    &kp ENTER  &mo 5               &kp TAB                    &kp RALT             &kp RGUI
             >;
 
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
+            sensor-bindings = <&switch_tab>, <&inc_dec_kp DOWN UP>;
         };
 
         nav_sym_en {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                           &trans                 &trans            &trans            &trans      &trans         &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0                           &kp RIGHT_BRACE        &kp GRAVE         &kp EXCL          &kp DOLLAR  &kp BACKSLASH  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp LG(SPACE)                    &kp RIGHT_PARENTHESIS  &kp COMMA         &kp MINUS         &kp AMPS    &kp PIPE       &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans         &trans    &trans  &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp SEMICOLON     &kp AT      &kp SLASH      &trans
-                &trans  &kp N0  &trans  &trans         &trans    &trans  &mo 6                  &trans            &kp SINGLE_QUOTE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                 &trans            &trans            &trans      &trans         &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp RIGHT_BRACE        &kp GRAVE         &kp EXCL          &kp DOLLAR  &kp BACKSLASH  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0                    &kp RIGHT_PARENTHESIS  &kp COMMA         &kp MINUS         &kp AMPS    &kp PIPE       &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp SEMICOLON     &kp AT      &kp SLASH      &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &mo 6                  &trans            &kp SINGLE_QUOTE  &trans
             >;
 
             display-name = "Nav+Sym En";
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&enc_vol>;
         };
 
         sym_nav_en {
             bindings = <
-&trans  &trans        &trans        &trans          &trans             &trans                                  &trans                &trans    &trans  &trans     &trans   &trans
-&trans  &kp HASH      &kp CARET     &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                          &trans                &trans    &trans  &trans     &trans   &trans
-&trans  &kp QUESTION  &kp ASTERISK  &kp UNDERSCORE  &kp DOT            &kp LEFT_PARENTHESIS                    &kp LEFT              &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&trans  &kp TILDE     &kp PLUS      &kp COLON       &kp LESS_THAN      &kp LEFT_BRACKET      &trans    &trans  &trans                &kp RG(RS(NUMBER_5))  &trans  &trans     &trans   &trans
-                      &trans        &kp PERCENT     &trans             &mo 6                 &trans    &trans  &trans                &trans    &trans  &trans
+&trans  &trans        &trans        &trans          &trans             &trans                                  &trans    &trans                &trans  &trans     &trans  &trans
+&trans  &kp HASH      &kp CARET     &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                          &trans    &trans                &trans  &trans     &trans  &trans
+&trans  &kp QUESTION  &kp ASTERISK  &kp UNDERSCORE  &kp DOT            &kp LEFT_PARENTHESIS                    &kp LEFT  &kp DOWN              &kp UP  &kp RIGHT  &trans  &trans
+&trans  &kp TILDE     &kp PLUS      &kp COLON       &kp LESS_THAN      &kp LEFT_BRACKET      &trans    &trans  &trans    &kp RG(RS(NUMBER_5))  &trans  &trans     &trans  &trans
+                      &trans        &kp PERCENT     &trans             &mo 6                 &trans    &trans  &trans    &trans                &trans  &trans
             >;
 
             display-name = "Sym+Nav En";
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&enc_vol>;
         };
 
         nav_sym_ru {
             display-name = "Nav+Sym Ru";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                           &trans                 &trans            &trans            &trans      &trans         &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0                           &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp LG(SPACE)                    &kp RIGHT_PARENTHESIS  &en COMMA         &kp MINUS         &en AMPS    &en PIPE       &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans         &trans    &trans  &en RIGHT_BRACKET      &en GREATER_THAN  &en SEMICOLON     &en AT      &kp SLASH      &trans
-                &trans  &kp N0  &trans  &trans         &trans    &trans  &mo 6                  &trans            &en SINGLE_QUOTE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                 &trans            &trans            &trans      &trans         &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0                    &kp RIGHT_PARENTHESIS  &en COMMA         &kp MINUS         &en AMPS    &en PIPE       &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans    &trans  &en RIGHT_BRACKET      &en GREATER_THAN  &en SEMICOLON     &en AT      &kp SLASH      &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &mo 6                  &trans            &en SINGLE_QUOTE  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&enc_vol>;
         };
 
         sym_nav_ru {
             display-name = "Sym+Nav Ru";
             bindings = <
-&trans  &trans        &trans        &trans          &trans                &trans                                  &trans                &trans    &trans  &trans     &trans   &trans
-&trans  &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                          &trans                &trans    &trans  &trans     &trans   &trans
-&trans  &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en DOT               &kp LEFT_PARENTHESIS                    &kp LEFT              &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&trans  &en TILDE     &kp PLUS      &en COLON       &en LESS_THAN         &en LEFT_BRACKET      &trans    &trans  &trans                &kp RG(RS(NUMBER_5))  &trans  &trans     &trans   &trans
-                      &trans        &en PERCENT     &trans                &mo 6                 &trans    &trans  &trans                &trans    &trans  &trans
+&trans  &trans        &trans        &trans          &trans                &trans                                  &trans    &trans                &trans  &trans     &trans  &trans
+&trans  &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                          &trans    &trans                &trans  &trans     &trans  &trans
+&trans  &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en DOT               &kp LEFT_PARENTHESIS                    &kp LEFT  &kp DOWN              &kp UP  &kp RIGHT  &trans  &trans
+&trans  &en TILDE     &kp PLUS      &en COLON       &en LESS_THAN         &en LEFT_BRACKET      &trans    &trans  &trans    &kp RG(RS(NUMBER_5))  &trans  &trans     &trans  &trans
+                      &trans        &en PERCENT     &trans                &mo 6                 &trans    &trans  &trans    &trans                &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&enc_vol>;
         };
 
         adj {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans       &trans  &kp F7  &kp F8  &kp F9  &kp F10                   &trans        &trans        &trans            &trans        &trans        &studio_unlock
-&trans       &trans  &kp F4  &kp F5  &kp F6  &kp F11                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&trans       &trans  &kp F7  &kp F8  &kp F9  &kp F10                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
+&trans       &trans  &kp F4  &kp F5  &kp F6  &kp F11                    &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &trans        &trans
 &trans       &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans    &trans  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans        &trans
-                     &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &trans
+                     &trans  &trans  &trans  &trans   &trans    &trans  &trans        &trans        &trans            &trans
             >;
 
             display-name = "Adjust";
