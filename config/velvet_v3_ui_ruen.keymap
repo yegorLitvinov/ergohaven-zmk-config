@@ -19,6 +19,13 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+
+        /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            require-prior-idle-ms = <800>;
+            excluded-positions = <>;
+        };
     };
 
     combos {
@@ -226,7 +233,7 @@
 &trackball { cpi = <1000>; };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 9 20>;
+    input-processors = <&zip_temp_layer 7 500>, <&zip_xy_scaler 9 20>;
 
     scroller {
         layers = <8>;
