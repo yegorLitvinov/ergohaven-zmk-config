@@ -47,7 +47,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <36 49>;
+            key-positions = <25 34>;
         };
 
         percent_en {
