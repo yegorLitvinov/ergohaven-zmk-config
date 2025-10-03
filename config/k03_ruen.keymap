@@ -152,7 +152,7 @@
             bindings = <
 &trans  &trans     &trans     &trans       &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp ESC    &trans     &kp LS(TAB)  &kp TAB   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LGUI     &kp LALT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &sk LSHFT  &sk LCTRL  &sk LGUI     &sk LALT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
@@ -162,7 +162,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans    &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp RS(TAB)  &kp TAB   &trans     &kp BSPC   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LALT     &kp RGUI  &kp RCTRL  &kp RSHFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &sk LALT     &sk RGUI  &sk RCTRL  &sk RSHFT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans    &trans     &trans     &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans    &trans
             >;
