@@ -40,11 +40,13 @@
         ru_kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <19 20>;
+            layers = <1>;
         };
 
         ru_hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <20 21>;
+            layers = <1>;
         };
 
         caps_word {
@@ -55,12 +57,13 @@
         percent_en {
             bindings = <&kp PERCENT>;
             key-positions = <38 39>;
-            layers = <4>;
+            layers = <3>;
         };
 
         percent_ru {
             bindings = <&en PERCENT>;
             key-positions = <38 39>;
+            layers = <4>;
         };
     };
 
