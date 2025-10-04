@@ -151,11 +151,11 @@
 
         modificators {
             bindings = <
-&trans  &trans   &trans     &trans       &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ESC  &trans     &kp LS(TAB)  &kp TAB   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &sk LCTRL  &sk LGUI     &sk LALT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans     &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans     &trans       &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans     &trans    &trans    &trans                    &trans  &trans       &trans   &trans  &trans  &trans
+&trans  &kp ESC  &trans     &trans    &trans    &trans                    &trans  &trans       &trans   &trans  &trans  &trans
+&trans  &trans   &sk LCTRL  &sk LGUI  &sk LALT  &trans                    &trans  &kp RS(TAB)  &kp TAB  &trans  &trans  &trans
+&trans  &trans   &trans     &trans    &trans    &trans  &trans    &trans  &trans  &trans       &trans   &trans  &trans  &trans
+                 &trans     &trans    &trans    &trans  &trans    &trans  &trans  &trans       &trans   &trans
             >;
         };
 
