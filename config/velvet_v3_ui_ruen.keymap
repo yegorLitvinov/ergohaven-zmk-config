@@ -136,7 +136,7 @@
         en {
             bindings = <
 &kp ESC    &kp Q  &kp W   &kp E   &kp R         &kp T                           &kp Y  &kp U         &kp I      &kp O    &kp P          &kp BSPC
-&kp TAB    &kp A  &kp S   &kp D   &kp F         &kp G                           &kp H  &kp J         &kp K      &kp L    &kp SEMICOLON  &sk RIGHT_CONTROL
+&sk LCTRL  &kp A  &kp S   &kp D   &kp F         &kp G                           &kp H  &kp J         &kp K      &kp L    &kp SEMICOLON  &kp TAB
 &kp LSHFT  &kp Z  &kp X   &kp C   &kp V         &kp B                           &kp N  &kp M         &kp COMMA  &kp DOT  &kp SQT        &kp RSHFT
                   &trans  &trans  &sk LEFT_GUI  &sl 2  &kp SPACE    &kp RETURN  &sl 3  &cap_sen 6 6  &trans     &trans
             >;
