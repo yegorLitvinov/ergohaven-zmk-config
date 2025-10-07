@@ -155,11 +155,11 @@
 
         mods {
             bindings = <
-&trans  &trans   &trans     &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &kp ESC  &trans     &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans
-&trans  &kp TAB  &sk LCTRL  &sk LGUI  &sk LALT  &trans                    &trans  &trans  &trans  &trans  &trans         &trans
-&trans  &trans   &trans     &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans
-                 &trans     &trans    &trans    &trans  &trans    &trans  &sl 5   &trans  &trans  &trans
+&trans  &trans   &trans        &trans     &trans        &trans                    &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &kp ESC  &trans        &trans     &trans        &trans                    &trans  &trans  &trans  &trans  &trans         &trans
+&trans  &kp TAB  &sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &trans                    &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans
+&trans  &trans   &trans        &trans     &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans
+                 &trans        &trans     &trans        &trans  &trans    &trans  &sl 5   &trans  &trans  &trans
             >;
 
             label = "Modificators";
