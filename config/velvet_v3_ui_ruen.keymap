@@ -156,10 +156,10 @@
 
         nav {
             bindings = <
-&trans  &trans          &trans          &trans          &kp LG(LA(I))   &trans                            &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &kp LG(LA(N1))  &kp LG(LA(N2))  &kp LG(LA(N3))  &kp LG(LA(N4))  &kp LG(LA(N5))                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans          &trans          &trans          &mac_clip       &kp LG(LS(N5))                    &trans    &trans    &trans  &trans     &trans  &trans
-                        &trans          &trans          &trans          &trans          &trans    &trans  &mo 5     &trans    &trans  &trans
+&trans  &trans          &trans          &trans          &kp LG(LA(I))   &trans                            &trans    &kp RG(RC(V))  &trans  &trans     &trans  &trans
+&trans  &kp LG(LA(N1))  &kp LG(LA(N2))  &kp LG(LA(N3))  &kp LG(LA(N4))  &kp LG(LA(N5))                    &kp LEFT  &kp DOWN       &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans          &trans          &trans          &mac_clip       &kp LG(LS(N5))                    &trans    &trans         &trans  &trans     &trans  &trans
+                        &trans          &trans          &trans          &trans          &trans    &trans  &mo 5     &trans         &trans  &trans
             >;
 
             label = "Navigation";
