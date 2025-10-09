@@ -144,8 +144,8 @@
 
         mods {
             bindings = <
-  &kp ESC  &trans     &trans    &sk LEFT_ALT  &trans                    &trans  &sk RIGHT_ALT  &trans         &trans     &trans
-  &kp TAB  &sk LCTRL  &sk LGUI  &trans        &trans                    &trans  &trans         &sk RIGHT_GUI  &sk RCTRL  &trans
+  &kp ESC  &trans     &trans    &trans        &trans                    &trans  &trans         &trans         &trans     &trans
+  &kp TAB  &sk LCTRL  &sk LGUI  &sk LEFT_ALT  &trans                    &trans  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RCTRL  &trans
   &trans   &trans     &trans    &trans        &trans                    &trans  &trans         &trans         &trans     &trans
                                 &trans        &trans  &trans    &trans  &sl 5   &trans
             >;
