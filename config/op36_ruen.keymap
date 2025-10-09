@@ -144,10 +144,10 @@
 
         mods {
             bindings = <
-  &kp ESC  &trans     &trans    &trans        &trans                    &trans  &trans         &trans         &trans     &trans
-  &kp TAB  &sk LCTRL  &sk LGUI  &sk LEFT_ALT  &trans                    &trans  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RCTRL  &trans
-  &trans   &trans     &trans    &trans        &trans                    &trans  &trans         &trans         &trans     &trans
-                                &trans        &trans  &trans    &trans  &sl 5   &trans
+  &kp ESC  &trans    &trans    &trans     &trans                    &trans  &trans     &trans         &trans    &trans
+  &kp TAB  &sk LALT  &sk LGUI  &sk LCTRL  &trans                    &trans  &sk RCTRL  &sk RIGHT_GUI  &sk RALT  &trans
+  &trans   &trans    &trans    &trans     &trans                    &trans  &trans     &trans         &trans    &trans
+                               &trans     &trans  &trans    &trans  &sl 5   &trans
             >;
 
             label = "Modificators";
