@@ -150,10 +150,10 @@
 
         nav {
             bindings = <
-&trans  &trans             &trans                &trans             &trans         &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans  &trans
-&trans  &trans             &kp LG(LS(NUMBER_5))  &trans             &trans         &trans                               &kp LEFT           &kp DOWN           &kp UP  &kp RIGHT          &trans  &trans
-&trans  &kp LG(LA(LC(Z)))  &trans                &kp LG(LC(LA(C)))  &kp LG(LC(V))  &kp LG(LC(LA(B)))                    &kp LG(LC(LA(N)))  &kp LG(LA(LC(M)))  &trans  &trans             &trans  &trans
-                           &trans                &trans             &trans         &trans             &trans    &trans  &sl 5              &trans             &trans  &trans
+&trans  &trans             &trans                &kp LG(LC(LA(E)))  &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans  &trans
+&trans  &trans             &kp LG(LS(NUMBER_5))  &trans             &kp LG(LC(LA(F)))  &trans                               &kp LEFT           &kp DOWN           &kp UP  &kp RIGHT          &trans  &trans
+&trans  &kp LG(LA(LC(Z)))  &trans                &trans             &kp LG(LC(V))      &kp LG(LC(LA(B)))                    &kp LG(LC(LA(N)))  &kp LG(LA(LC(M)))  &trans  &trans             &trans  &trans
+                           &trans                &trans             &trans             &trans             &trans    &trans  &sl 5              &trans             &trans  &trans
             >;
 
             label = "Navigation";
