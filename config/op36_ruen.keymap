@@ -176,10 +176,10 @@
 
         adj {
             bindings = <
-  &trans          &trans                &trans                &trans          &trans                            &trans        &trans          &trans        &trans           &trans
-  &kp LG(LA(N1))  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_3))  &kp LG(LA(N4))  &kp LG(LA(N5))                    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-  &kp LG(LA(N6))  &kp LG(LA(N7))        &trans                &kp LG(LC(V))   &kp LG(LS(N5))                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_CLR       &trans
-                                                              &trans          &trans          &trans    &trans  &trans        &trans
+  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_CLR
+  &trans  &trans  &trans  &trans  &trans                    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans        &trans          &trans        &trans           &trans
+                          &trans  &trans  &trans    &trans  &trans        &trans
             >;
 
             display-name = "Adjust";
@@ -198,10 +198,10 @@
 
         apps {
             bindings = <
-  &trans             &trans  &trans             &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans
-  &trans             &trans  &trans             &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &trans             &trans             &trans  &trans             &trans
-  &kp LG(LC(LA(Z)))  &trans  &kp LG(LC(LA(C)))  &trans             &trans                               &kp LG(LC(LA(N)))  &kp LG(LC(LA(M)))  &trans  &trans             &trans
-                                                &trans             &trans             &trans    &trans  &trans             &trans
+  &trans             &trans                &trans             &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans
+  &trans             &kp LG(LS(NUMBER_5))  &trans             &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &trans             &trans             &trans  &trans             &trans
+  &kp LG(LC(LA(Z)))  &trans                &kp LG(LC(LA(C)))  &kp LG(LC(V))      &trans                               &kp LG(LC(LA(N)))  &kp LG(LC(LA(M)))  &trans  &trans             &trans
+                                                              &trans             &trans             &trans    &trans  &trans             &trans
             >;
 
             label = "Applications";
