@@ -144,10 +144,10 @@
 
         mods {
             bindings = <
-  &kp ESC     &trans    &trans    &trans     &trans                    &trans  &trans     &trans         &trans    &kp BACKSPACE
-  &trans      &sk LALT  &sk LGUI  &sk LCTRL  &trans                    &trans  &sk RCTRL  &sk RIGHT_GUI  &sk RALT  &kp TAB
-  &sk LSHIFT  &trans    &trans    &trans     &trans                    &trans  &trans     &trans         &trans    &sk RSHIFT
-                                  &trans     &trans  &trans    &trans  &sl 5   &trans
+  &kp ESC           &trans    &trans    &trans  &trans                    &trans  &trans  &trans         &trans    &kp BACKSPACE
+  &sk LEFT_CONTROL  &sk LALT  &sk LGUI  &trans  &trans                    &trans  &trans  &sk RIGHT_GUI  &sk RALT  &kp TAB
+  &sk LSHIFT        &trans    &trans    &trans  &trans                    &trans  &trans  &trans         &trans    &sk RSHIFT
+                                        &trans  &trans  &trans    &trans  &mo 5   &trans
             >;
 
             label = "Modificators";
@@ -158,7 +158,7 @@
   &kp HASH      &kp CARET     &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &kp GRAVE         &kp EXCL   &kp DOLLAR  &kp BACKSLASH
   &kp QUESTION  &kp ASTERISK  &kp UNDERSCORE  &kp AT             &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp MINUS  &kp AMPS    &kp PIPE
   &kp TILDE     &kp PLUS      &kp COLON       &kp LESS_THAN      &kp LEFT_BRACKET                        &kp RBKT               &kp GREATER_THAN  &kp COMMA  &kp DOT     &kp FSLH
-                                              &trans             &sl 5                 &trans    &trans  &trans                 &trans
+                                              &trans             &mo 5                 &trans    &trans  &trans                 &trans
             >;
 
             display-name = "Sym En";
@@ -170,15 +170,15 @@
   &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                          &en RIGHT_BRACE        &en GRAVE         &kp EXCL   &en DOLLAR  &en BACKSLASH
   &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en AT                &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &en SEMICOLON     &kp MINUS  &en AMPS    &en PIPE
   &en TILDE     &kp PLUS      &en COLON       &en LESS_THAN         &en LEFT_BRACKET                        &en RIGHT_BRACKET      &en GREATER_THAN  &en COMMA  &en DOT     &kp SLASH
-                                              &trans                &sl 5                 &trans    &trans  &trans                 &trans
+                                              &trans                &mo 5                 &trans    &trans  &trans                 &trans
             >;
         };
 
         adj {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_CLR
-  &trans  &trans  &trans  &trans  &trans                    &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans        &trans          &trans        &trans           &trans
+  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3          &bt BT_CLR
+  &trans  &trans  &trans  &trans  &trans                    &trans        &kp C_VOLUME_DOWN     &kp K_MUTE             &kp C_VOLUME_UP       &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC  &trans
                           &trans  &trans  &trans    &trans  &trans        &trans
             >;
 
@@ -188,7 +188,7 @@
         num {
             bindings = <
   &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &kp N4  &kp N5  &kp N6  &kp N0                    &trans  &trans  &trans  &trans  &trans
+  &kp N0  &kp N4  &kp N5  &kp N6  &kp N0                    &trans  &trans  &trans  &trans  &trans
   &trans  &kp N1  &kp N2  &kp N3  &trans                    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &trans    &trans  &trans  &trans
             >;
@@ -198,9 +198,9 @@
 
         apps {
             bindings = <
-  &trans             &trans                &trans             &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans
-  &trans             &kp LG(LS(NUMBER_5))  &trans             &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &trans             &trans             &trans  &trans             &trans
-  &kp LG(LC(LA(Z)))  &trans                &kp LG(LC(LA(C)))  &kp LG(LC(V))      &trans                               &kp LG(LC(LA(N)))  &kp LG(LC(LA(M)))  &trans  &trans             &trans
+  &trans             &trans                &trans             &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans        &kp LG(LC(LA(O)))  &trans
+  &trans             &kp LG(LS(NUMBER_5))  &trans             &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &kp LEFT_ARROW     &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW    &trans
+  &kp LG(LC(LA(Z)))  &trans                &kp LG(LC(LA(C)))  &kp LG(LC(V))      &trans                               &kp LG(LC(LA(N)))  &kp LG(LC(LA(M)))  &trans        &trans             &trans
                                                               &trans             &trans             &trans    &trans  &trans             &trans
             >;
 
