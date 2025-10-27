@@ -193,10 +193,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &mo 8                     &mo 8   &mkp MB1  &mkp MB2  &mkp MB3  &mo 7   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &mo 8                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Mouse";
@@ -204,10 +204,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Scroll";
@@ -215,10 +215,10 @@
 
         sniper {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Sniper";
@@ -227,9 +227,9 @@
         nums {
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &kp N0                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp N1  &kp N2  &kp N3  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &kp N0  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Numbers";
