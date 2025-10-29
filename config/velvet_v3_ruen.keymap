@@ -112,10 +112,10 @@
 
         app {
             bindings = <
-&trans  &trans             &trans                &trans             &trans             &kp LG(LC(LA(T)))                    &trans             &trans             &trans  &kp LG(LC(LA(O)))  &trans  &trans
-&trans  &trans             &kp LG(LS(NUMBER_5))  &trans             &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &trans             &trans             &trans  &trans             &trans  &trans
-&trans  &kp LG(LA(LC(Z)))  &trans                &kp LG(LC(LA(C)))  &kp LG(LC(V))      &trans                               &kp LG(LC(LA(N)))  &kp LG(LA(LC(M)))  &trans  &trans             &trans  &trans
-                           &trans                &trans             &trans             &trans             &trans    &trans  &trans             &trans             &trans  &trans
+&trans  &trans             &trans             &trans             &kp LG(LC(LA(F)))  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LC(LA(M)))  &kp LG(LC(LA(T)))  &kp LG(LA(LC(Z)))  &kp LG(LC(LA(C)))  &kp LG(LC(LA(G)))                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans             &trans             &kp LG(LC(V))      &kp LG(LS(NUMBER_5))                    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans             &trans             &trans             &trans                &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Applications";
