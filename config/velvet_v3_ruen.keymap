@@ -23,6 +23,11 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <39 40>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <38 11>;
+        };
     };
 
     macros {
@@ -150,7 +155,7 @@
 
         nums_nav {
             bindings = <
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp RA(LEFT_ARROW)  &trans          &trans        &kp RA(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &kp RA(LEFT_ARROW)  &trans          &trans        &kp RA(RIGHT_ARROW)  &trans  &kp RA(BACKSPACE)
 &trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans                    &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT            &trans  &trans
 &trans  &trans  &kp N1  &kp N2  &kp N3  &trans                    &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP   &kp END              &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans          &trans        &trans
