@@ -28,10 +28,16 @@
             key-positions = <39 40>;
         };
 
-        trackball_access {
-            bindings = <&mo 6>;
+        to_ru {
+            bindings = <&layer_ru>;
             key-positions = <41 42>;
-            layers = <0 1>;
+            layers = <0>;
+        };
+
+        to_en {
+            bindings = <&layer_en>;
+            key-positions = <41 42>;
+            layers = <1>;
         };
     };
 
