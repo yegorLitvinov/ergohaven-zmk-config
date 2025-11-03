@@ -30,13 +30,13 @@
 
         to_ru {
             bindings = <&layer_ru>;
-            key-positions = <41 42>;
+            key-positions = <3 4 2>;
             layers = <0>;
         };
 
         to_en {
             bindings = <&layer_en>;
-            key-positions = <41 42>;
+            key-positions = <2 3 4>;
             layers = <1>;
         };
     };
