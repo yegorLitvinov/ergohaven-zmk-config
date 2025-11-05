@@ -104,10 +104,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R         &kp T                                   &kp Y  &kp U      &kp I      &kp O    &kp P           &bspace_del
-&kp TAB    &kp A  &kp S  &kp D  &kp F         &kp G                                   &kp H  &kp J      &kp K      &kp L    &kp APOSTROPHE  &kp ENTER
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V         &kp B                                   &kp N  &kp M      &kp COMMA  &kp DOT  &trans          &trans
-                  &mo 6  &mo 4  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE    &shift_caps  &mo 2  &layer_ru  &mo 5      &mo 4
+&kp ESC           &kp Q  &kp W  &kp E  &kp R         &kp T                                   &kp Y  &kp U      &kp I      &kp O    &kp P           &bspace_del
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D  &kp F         &kp G                                   &kp H  &kp J      &kp K      &kp L    &kp APOSTROPHE  &kp ENTER
+&trans            &kp Z  &kp X  &kp C  &kp V         &kp B                                   &kp N  &kp M      &kp COMMA  &kp DOT  &trans          &kp TAB
+                         &mo 6  &mo 4  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE    &shift_caps  &mo 2  &layer_ru  &mo 5      &mo 4
             >;
 
             display-name = "Base";
