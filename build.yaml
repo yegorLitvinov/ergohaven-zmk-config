@@ -10,15 +10,6 @@ include:
     shield: velvet_v3_right
 
   - board: ergohaven
-    shield: velvet_v3_ui_right
-    keymap: velvet_v3_ui_ruen
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: velvet_v3_ui_right_ruen-ergohaven-zmk
-  # - board: ergohaven
-  #   shield: velvet_v3_ui_left
-
-  - board: ergohaven
     shield: k03_left
     keymap: k03_ruen
     snippet: studio-rpc-usb-uart
