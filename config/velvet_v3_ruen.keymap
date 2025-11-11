@@ -18,11 +18,6 @@
             key-positions = <8 9>;
             layers = <1>;
         };
-
-        spotlight {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <39 40>;
-        };
     };
 
     macros {
