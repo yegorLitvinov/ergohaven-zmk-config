@@ -157,7 +157,7 @@
             bindings = <
 &none  &kp LG(LC(LA(Q)))  &none              &kp LG(LC(LA(E)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(T)))                     &none  &none  &none  &none  &none  &none
 &none  &kp LG(LC(LA(A)))  &kp LG(LC(LA(S)))  &kp LG(LC(LA(D)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                     &none  &none  &none  &none  &none  &none
-&none  &none              &none              &none              &kp LG(LC(V))      &kp LG(LS(NUMBER_5))                  &none  &none  &none  &none  &none  &none
+&none  &none              &none              &none              &kp LG(LC(LA(V)))  &kp LG(LS(NUMBER_5))                  &none  &none  &none  &none  &none  &none
                           &none              &none              &none              &none                 &none    &none  &none  &none  &none  &none
             >;
 
