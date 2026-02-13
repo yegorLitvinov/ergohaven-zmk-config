@@ -142,37 +142,26 @@
             >;
         };
 
-        nums_nav {
+        apps_nav {
             bindings = <
-&none  &none   &kp N7  &kp N8  &kp N9  &none                  &kp RA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp RA(RIGHT_ARROW)  &none  &none
-&none  &kp N0  &kp N4  &kp N5  &kp N6  &none                  &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT            &none  &none
-&none  &none   &kp N1  &kp N2  &kp N3  &none                  &kp LG(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LG(RIGHT_ARROW)  &none  &none
-               &none   &none   &none   &none  &none    &none  &none               &none           &none         &none
+&none  &kp LG(LC(LA(Q)))  &none              &kp LG(LC(LA(E)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(T)))                    &kp RA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp RA(RIGHT_ARROW)  &none  &none
+&none  &kp LG(LC(LA(A)))  &kp LG(LC(LA(S)))  &kp LG(LC(LA(D)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                    &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT            &none  &none
+&none  &none              &none              &none              &kp LG(LC(LA(V)))  &kp LG(LS(NUMBER_5))                 &kp LG(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LG(RIGHT_ARROW)  &none  &none
+                          &none              &none              &none              &none                 &none   &none  &none               &none           &none         &none
             >;
 
-            label = "Numbers and Navigation";
+            label = "Applications & Navigation";
         };
 
-        apps {
+        num_media {
             bindings = <
-&none  &kp LG(LC(LA(Q)))  &none              &kp LG(LC(LA(E)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(T)))                     &none  &none  &none  &none  &none  &none
-&none  &kp LG(LC(LA(A)))  &kp LG(LC(LA(S)))  &kp LG(LC(LA(D)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                     &none  &none  &none  &none  &none  &none
-&none  &none              &none              &none              &kp LG(LC(LA(V)))  &kp LG(LS(NUMBER_5))                  &none  &none  &none  &none  &none  &none
-                          &none              &none              &none              &none                 &none    &none  &none  &none  &none  &none
+&none  &none   &kp N7  &kp N8  &kp N9  &none                  &bt BT_SEL 0      &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
+&none  &kp N0  &kp N4  &kp N5  &kp N6  &none                  &kp C_PLAY_PAUSE  &kp C_VOL_DN          &kp K_MUTE             &kp C_VOL_UP          &none         &none
+&none  &none   &kp N1  &kp N2  &kp N3  &none                  &none             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC  &none         &none
+               &none   &none   &none   &none  &trans    &none  &none             &none                 &none                  &none
             >;
 
-            label = "Applications";
-        };
-
-        media {
-            bindings = <
-&none  &none  &none  &none  &none  &none                  &bt BT_SEL 0      &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &none  &none  &none  &none                  &kp C_PLAY_PAUSE  &kp C_VOL_DN          &kp K_MUTE             &kp C_VOL_UP          &none         &none
-&none  &none  &none  &none  &none  &none                  &none             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_AUTO  &kp C_BRIGHTNESS_INC  &none         &none
-              &none  &none  &none  &none  &none    &none  &none             &none                 &none                  &none
-            >;
-
-            display-name = "Media";
+            display-name = "Numbers & Media";
         };
     };
 };
