@@ -28,9 +28,7 @@
             release-after-ms = <200>;
         };
 
-        /omit-if-no-ref/
-
-        zip_temp_layer: zip_temp_layer {
+        zip_auto_mouse: zip_auto_mouse {
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
             require-prior-idle-ms = <800>;
@@ -60,7 +58,7 @@
                 &trans    &trans   &trans   &trans   &trans    &trans  &mo 3     &trans        &trans         &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym {
@@ -77,8 +75,8 @@
         adj {
             bindings = <
 &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &none         &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &none         &studio_unlock
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &none
                     &none   &none    &none    &none    &none    &none  &none         &none         &none             &none
             >;
 
@@ -167,7 +165,7 @@
 &trackball { cpi = <1000>; };
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 4 500>, <&zip_xy_scaler 9 20>;
+    input-processors = <&zip_auto_mouse 4 500>, <&zip_xy_scaler 9 20>;
 
     scroller {
         layers = <5>;
