@@ -144,9 +144,9 @@
 
         apps_nav {
             bindings = <
-&none  &kp LG(LC(LA(Q)))  &none              &kp LG(LC(LA(E)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(T)))                     &kp RA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp RA(RIGHT_ARROW)  &none  &none
+&none  &kp LG(LC(LA(Q)))  &kp LG(LC(LA(W)))  &kp LG(LC(LA(E)))  &kp LG(LC(LA(R)))  &kp LG(LC(LA(T)))                     &kp RA(LEFT_ARROW)  &kp PAGE_DOWN   &kp PAGE_UP   &kp RA(RIGHT_ARROW)  &none  &none
 &none  &kp LG(LC(LA(A)))  &kp LG(LC(LA(S)))  &kp LG(LC(LA(D)))  &kp LG(LC(LA(F)))  &kp LG(LC(LA(G)))                     &kp LEFT            &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT            &none  &none
-&none  &none              &none              &none              &kp LG(LC(LA(V)))  &kp LG(LS(NUMBER_5))                  &kp LG(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LG(RIGHT_ARROW)  &none  &none
+&none  &kp LG(LC(LA(Z)))  &kp LG(LC(LA(X)))  &kp LG(LC(LA(C)))  &kp LG(LC(LA(V)))  &kp LG(LS(NUMBER_5))                  &kp LG(LEFT_ARROW)  &kp LG(DOWN)    &kp LG(UP)    &kp LG(RIGHT_ARROW)  &none  &none
                           &none              &none              &none              &none                 &none    &none  &none               &none           &none         &none
             >;
 
