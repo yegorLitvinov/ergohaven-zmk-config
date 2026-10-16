@@ -154,11 +154,11 @@
 
         sym_en {
             bindings = <
-&trans  &trans        &trans        &trans          &trans             &trans                                  &trans                 &trans            &trans            &trans      &trans         &trans
-&trans  &kp HASH      &kp CARET     &kp EQUAL       &kp DOUBLE_QUOTES  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &kp GRAVE         &kp EXCL          &kp DOLLAR  &kp BACKSLASH  &trans
-&trans  &kp QUESTION  &kp ASTERISK  &kp UNDERSCORE  &kp COLON          &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp SEMI          &kp MINUS         &kp AMPS    &kp PIPE       &trans
-&trans  &kp TILDE     &kp PLUS      &kp AT          &kp LESS_THAN      &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp COMMA         &kp DOT     &kp SLASH      &trans
-                      &trans        &kp PERCENT     &trans             &trans                &trans    &trans  &trans                 &trans            &kp SINGLE_QUOTE  &trans
+&trans  &trans     &trans        &trans       &trans         &trans                              &trans             &trans            &trans    &trans      &trans         &trans
+&trans  &kp HASH   &kp CARET     &kp EQUAL    &trans         &kp LEFT_BRACE                      &kp RIGHT_BRACE    &trans            &kp EXCL  &kp DOLLAR  &kp BACKSLASH  &trans
+&trans  &trans     &kp ASTERISK  &trans       &trans         &trans                              &trans             &trans            &trans    &kp AMPS    &kp PIPE       &trans
+&trans  &kp TILDE  &kp PLUS      &kp AT       &kp LESS_THAN  &kp LEFT_BRACKET  &trans    &trans  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans    &trans      &kp SLASH      &trans
+                   &trans        &kp PERCENT  &trans         &trans            &trans    &trans  &trans             &trans            &trans    &trans
             >;
 
             display-name = "Sym En";
@@ -167,11 +167,11 @@
         sym_ru {
             display-name = "Sym Ru";
             bindings = <
-&trans  &trans        &trans        &trans          &trans                &trans                                  &trans                 &trans            &trans            &trans      &trans         &trans
-&trans  &en HASH      &en CARET     &kp EQUAL       &kp RU_DOUBLE_QUOTES  &en LEFT_BRACE                          &en RIGHT_BRACE        &en GRAVE         &kp EXCL          &en DOLLAR  &en BACKSLASH  &trans
-&trans  &kp QUESTION  &en ASTERISK  &kp UNDERSCORE  &en COLON             &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &en SEMICOLON     &kp MINUS         &en AMPS    &en PIPE       &trans
-&trans  &en TILDE     &kp PLUS      &en AT          &en LESS_THAN         &en LEFT_BRACKET      &trans    &trans  &en RIGHT_BRACKET      &en GREATER_THAN  &en COMMA         &en DOT     &kp SLASH      &trans
-                      &trans        &en PERCENT     &trans                &trans                &trans    &trans  &trans                 &trans            &en SINGLE_QUOTE  &trans
+&trans  &trans     &trans        &trans       &trans         &trans                              &trans             &trans            &trans    &trans      &trans         &trans
+&trans  &en HASH   &en CARET     &kp EQUAL    &trans         &en LEFT_BRACE                      &en RIGHT_BRACE    &trans            &kp EXCL  &en DOLLAR  &en BACKSLASH  &trans
+&trans  &trans     &en ASTERISK  &trans       &trans         &trans                              &trans             &trans            &trans    &en AMPS    &en PIPE       &trans
+&trans  &en TILDE  &kp PLUS      &en AT       &en LESS_THAN  &en LEFT_BRACKET  &trans    &trans  &en RIGHT_BRACKET  &en GREATER_THAN  &trans    &trans      &kp SLASH      &trans
+                   &trans        &en PERCENT  &trans         &trans            &trans    &trans  &trans             &trans            &trans    &trans
             >;
         };
 
