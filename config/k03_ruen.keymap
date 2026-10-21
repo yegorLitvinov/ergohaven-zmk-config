@@ -93,6 +93,11 @@
             key-positions = <58 59>;
             layers = <1>;
         };
+
+        delete_word {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <55 56>;
+        };
     };
 
     macros {
