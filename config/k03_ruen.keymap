@@ -95,7 +95,7 @@
         };
 
         delete_word {
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <55 56>;
         };
     };
