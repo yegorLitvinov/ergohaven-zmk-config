@@ -33,7 +33,7 @@
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <20 21>;
+            key-positions = <45 46>;
             layers = <1>;
         };
 
