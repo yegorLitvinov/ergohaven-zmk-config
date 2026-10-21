@@ -202,11 +202,11 @@
 
         sym_en {
             bindings = <
-&trans  &trans    &trans        &trans       &trans         &trans                              &trans             &trans            &trans  &trans  &trans  &trans
-&trans  &kp HASH  &kp CARET     &kp EQUAL    &trans         &kp LEFT_BRACE                      &kp RIGHT_BRACE    &trans            &trans  &trans  &trans  &trans
-&trans  &trans    &kp ASTERISK  &trans       &trans         &trans                              &trans             &trans            &trans  &trans  &trans  &trans
-&trans  &trans    &kp PLUS      &trans       &kp LESS_THAN  &kp LEFT_BRACKET  &trans    &trans  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans  &trans  &trans  &trans
-                  &trans        &kp PERCENT  &trans         &trans            &trans    &trans  &trans             &trans            &trans  &trans
+&trans  &trans         &trans            &trans        &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL     &kp LEFT_BRACE    &kp RIGHT_BRACE                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PLUS       &kp MINUS         &kp ASTERISK  &kp SLASH         &kp PERCENT                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp CARET         &kp HASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans            &trans        &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Sym En";
