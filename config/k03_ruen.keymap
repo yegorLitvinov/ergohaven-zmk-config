@@ -58,6 +58,17 @@
             bindings = <&en DOUBLE_QUOTES>;
             key-positions = <6 7>;
         };
+
+        yo {
+            bindings = <&kp RU_CYRILLIC_IO>;
+            key-positions = <17 16>;
+            layers = <1>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
