@@ -60,7 +60,7 @@
         };
 
         yo {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <17 16>;
             layers = <1>;
         };
