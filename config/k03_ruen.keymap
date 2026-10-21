@@ -60,7 +60,7 @@
         };
 
         yo {
-            bindings = <&kp RU_CYRILLIC_IO>;
+            bindings = <&kp GRAVE>;
             key-positions = <17 16>;
             layers = <1>;
         };
