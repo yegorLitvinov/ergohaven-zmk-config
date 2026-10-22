@@ -28,11 +28,6 @@
             layers = <1>;
         };
 
-        spotlight {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <53 54>;
-        };
-
         semicolon_en {
             bindings = <&kp SEMICOLON>;
             key-positions = <3 4>;
