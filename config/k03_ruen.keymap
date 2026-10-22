@@ -63,23 +63,11 @@
 
         sym_en {
             bindings = <&mo 2>;
-            key-positions = <51 50>;
-            layers = <0>;
-        };
-
-        sym_en_right {
-            bindings = <&mo 2>;
             key-positions = <58 59>;
             layers = <0>;
         };
 
         sym_ru {
-            bindings = <&mo 3>;
-            key-positions = <51 50>;
-            layers = <1>;
-        };
-
-        sym_ru_right {
             bindings = <&mo 3>;
             key-positions = <58 59>;
             layers = <1>;
@@ -100,6 +88,11 @@
             bindings = <&en BACKSLASH>;
             key-positions = <35 49>;
             layers = <1>;
+        };
+
+        new_line {
+            bindings = <&kp RS(ENTER)>;
+            key-positions = <56 57>;
         };
     };
 
