@@ -213,14 +213,15 @@
         };
 
         sym_ru {
-            display-name = "Sym Ru";
             bindings = <
-&trans  &trans    &trans        &trans       &trans         &trans                              &trans             &trans            &trans  &trans  &trans  &trans
-&trans  &en HASH  &en CARET     &kp EQUAL    &trans         &en LEFT_BRACE                      &en RIGHT_BRACE    &trans            &trans  &trans  &trans  &trans
-&trans  &trans    &en ASTERISK  &trans       &trans         &trans                              &trans             &trans            &trans  &trans  &trans  &trans
-&trans  &trans    &kp PLUS      &trans       &en LESS_THAN  &en LEFT_BRACKET  &trans    &trans  &en RIGHT_BRACKET  &en GREATER_THAN  &trans  &trans  &trans  &trans
-                  &trans        &en PERCENT  &trans         &trans            &trans    &trans  &trans             &trans            &trans  &trans
+&trans  &trans         &trans            &trans        &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &en LESS_THAN  &en GREATER_THAN  &en EQUAL     &en LEFT_BRACE    &en RIGHT_BRACE                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &en PLUS       &en MINUS         &en ASTERISK  &en SLASH         &en PERCENT                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &en CARET         &en HASH      &en LEFT_BRACKET  &en RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans            &trans        &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            display-name = "Sym En";
         };
 
         apps_nav {
