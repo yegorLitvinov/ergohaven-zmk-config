@@ -40,9 +40,10 @@
             layers = <1>;
         };
 
-        double_quote {
-            bindings = <&en DOUBLE_QUOTES>;
+        double_quote_en {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         yo {
@@ -88,6 +89,12 @@
         new_line {
             bindings = <&kp RS(ENTER)>;
             key-positions = <56 57>;
+        };
+
+        double_quote_ru {
+            bindings = <&en DOUBLE_QUOTES>;
+            key-positions = <6 7>;
+            layers = <1>;
         };
     };
 
