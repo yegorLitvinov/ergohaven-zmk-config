@@ -162,8 +162,8 @@
 &kp ESC     &kp MINUS  &kp UNDER  &kp DOT  &kp COMMA         &kp COLON                                          &kp SINGLE_QUOTE  &kp GRAVE  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &layer_ru
 &kp AT      &kp Q      &kp W      &kp E    &kp R             &kp T                                              &kp Y             &kp U      &kp I         &kp O                 &kp P                  &kp AMPERSAND
 &kp DOLLAR  &kp A      &kp S      &kp D    &kp F             &kp G                                              &kp H             &kp J      &kp K         &kp L                 &trans                 &kp PIPE
-&kp TILDE   &kp Z      &kp X      &kp C    &kp V             &kp B           &kp LEFT_ALT        &kp TAB        &kp N             &kp M      &trans        &trans                &trans                 &kp SLASH
-                       &mo 5      &mo 4    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND    &kp BACKSPACE  &kp SPACE         &kp ENTER  &mo 4         &mo 5
+&kp TILDE   &kp Z      &kp X      &kp C    &kp V             &kp B             &kp LEFT_ALT      &kp TAB        &kp N             &kp M      &trans        &trans                &trans                 &kp SLASH
+                       &mo 5      &mo 4    &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_SHIFT    &kp BACKSPACE  &kp SPACE         &kp ENTER  &mo 4         &mo 5
             >;
 
             display-name = "Base";
