@@ -86,11 +86,6 @@
             layers = <1>;
         };
 
-        new_line {
-            bindings = <&kp RS(ENTER)>;
-            key-positions = <56 57>;
-        };
-
         double_quote_ru {
             bindings = <&en DOUBLE_QUOTES>;
             key-positions = <6 7>;
@@ -159,11 +154,11 @@
 
         en {
             bindings = <
-&trans     &kp MINUS  &kp UNDER  &kp DOT  &kp COMMA         &kp COLON                                          &kp SINGLE_QUOTE  &kp GRAVE  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &layer_ru
-&trans     &kp Q      &kp W      &kp E    &kp R             &kp T                                              &kp Y             &kp U      &kp I         &kp O                 &kp P                  &kp AMPERSAND
-&kp ESC    &kp A      &kp S      &kp D    &kp F             &kp G                                              &kp H             &kp J      &kp K         &kp L                 &trans                 &kp ENTER
-&kp TILDE  &kp Z      &kp X      &kp C    &kp V             &kp B           &kp LEFT_ALT        &kp TAB        &kp N             &kp M      &trans        &trans                &trans                 &kp SLASH
-                      &mo 5      &mo 4    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND    &kp BACKSPACE  &kp SPACE         &kp ENTER  &mo 4         &mo 5
+&trans     &kp MINUS  &kp UNDER  &kp DOT  &kp COMMA         &kp COLON                                      &kp SINGLE_QUOTE  &kp GRAVE  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp K_LOCK
+&kp TAB    &kp Q      &kp W      &kp E    &kp R             &kp T                                          &kp Y             &kp U      &kp I         &kp O                 &kp P                  &kp AMPERSAND
+&kp ESC    &kp A      &kp S      &kp D    &kp F             &kp G                                          &kp H             &kp J      &kp K         &kp L                 &trans                 &kp ENTER
+&kp TILDE  &kp Z      &kp X      &kp C    &kp V             &kp B             &kp LEFT_ALT      &trans     &kp N             &kp M      &trans        &trans                &trans                 &kp SLASH
+                      &mo 5      &mo 4    &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_SHIFT    &kp SPACE  &kp BACKSPACE     &layer_ru  &mo 4         &mo 5
             >;
 
             display-name = "Base";
@@ -179,11 +174,11 @@
         ru {
             display-name = "Ru";
             bindings = <
-&trans      &kp MINUS                &kp UNDER             &en DOT             &en COMMA           &en COLON                             &en SINGLE_QUOTE    &en GRAVE                  &en QUESTION         &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &layer_en
-&en AT      &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE     &en AMPS
-&en DOLLAR  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE    &en PIPE
-&en TILDE   &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &trans    &trans  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E      &kp SLASH
-                                     &trans                &trans              &trans              &trans              &trans    &trans  &trans              &trans                     &trans               &trans
+&trans     &kp MINUS                &kp UNDER             &en DOT             &en COMMA           &en COLON                             &en SINGLE_QUOTE    &en GRAVE                  &en QUESTION         &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE     &en AMPS
+&trans     &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE    &trans
+&en TILDE  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &trans    &trans  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E      &kp SLASH
+                                    &trans                &trans              &trans              &trans              &trans    &trans  &trans              &layer_en                  &trans               &trans
             >;
 
             sensor-bindings =
