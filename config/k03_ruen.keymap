@@ -204,16 +204,15 @@
 
         sym_ru {
             bindings = <
-&trans  &trans         &trans            &trans        &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &en LESS_THAN  &en GREATER_THAN  &en EQUAL     &en LEFT_BRACE    &en RIGHT_BRACE                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &en PLUS       &en MINUS         &en ASTERISK  &en SLASH         &en PERCENT                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &en CARET         &en HASH      &en LEFT_BRACKET  &en RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans            &trans        &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans            &trans       &trans            &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &en LESS_THAN  &en GREATER_THAN  &en EQUAL    &en LEFT_BRACE    &en RIGHT_BRACE                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &en PLUS       &en ASTERISK      &en PERCENT  &en LEFT_BRACKET  &en RIGHT_BRACKET                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &en AT         &en DOLLAR        &en HASH     &en CARET         &en PIPE           &en AMPS    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                       &trans            &trans       &trans            &trans             &trans      &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "Sym En";
         };
-
         apps_nav {
             bindings = <
 &trans  &trans             &trans             &trans             &trans             &trans                                &trans              &trans          &trans        &trans               &trans  &trans
