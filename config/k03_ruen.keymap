@@ -69,11 +69,6 @@
             layers = <1>;
         };
 
-        delete_word {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <55 56>;
-        };
-
         back_slash_en {
             bindings = <&kp BACKSLASH>;
             key-positions = <35 49>;
@@ -154,11 +149,11 @@
 
         en {
             bindings = <
-&trans     &kp MINUS  &kp UNDER  &kp DOT  &kp COMMA  &kp COLON                                          &kp SINGLE_QUOTE   &kp GRAVE  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt LG(LC(Q)) RIGHT_SHIFT
-&kp TAB    &kp Q      &kp W      &kp E    &kp R      &kp T                                              &kp Y              &kp U      &kp I         &kp O                 &kp P                  &kp BACKSPACE
-&kp ESC    &kp A      &kp S      &kp D    &kp F      &kp G                                              &kp H              &kp J      &kp K         &kp L                 &trans                 &kp ENTER
-&kp TILDE  &kp Z      &kp X      &kp C    &kp V      &kp B             &trans            &kp RIGHT_ALT  &kp N              &kp M      &trans        &trans                &trans                 &kp SLASH
-                      &mo 5      &mo 4    &mo 4      &kp LEFT_COMMAND  &kp LEFT_SHIFT    &kp SPACE      &kp RIGHT_CONTROL  &layer_ru  &mo 4         &mo 5
+&trans     &kp MINUS  &kp UNDER  &kp DOT  &kp COMMA  &kp COLON                                          &kp SINGLE_QUOTE  &kp GRAVE  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt LG(LC(Q)) RIGHT_SHIFT
+&kp TAB    &kp Q      &kp W      &kp E    &kp R      &kp T                                              &kp Y             &kp U      &kp I         &kp O                 &kp P                  &kp BACKSPACE
+&kp ESC    &kp A      &kp S      &kp D    &kp F      &kp G                                              &kp H             &kp J      &kp K         &kp L                 &trans                 &kp ENTER
+&kp TILDE  &kp Z      &kp X      &kp C    &kp V      &kp B             &trans            &kp RIGHT_ALT  &kp N             &kp M      &trans        &trans                &trans                 &kp SLASH
+                      &mo 5      &mo 4    &mo 4      &kp LEFT_COMMAND  &kp LEFT_SHIFT    &kp RCTRL      &kp SPACE         &layer_ru  &mo 4         &mo 5
             >;
 
             display-name = "Base";
