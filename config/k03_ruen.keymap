@@ -80,13 +80,13 @@
 
         back_slash_en {
             bindings = <&kp BACKSLASH>;
-            key-positions = <35 49>;
+            key-positions = <49 48>;
             layers = <0>;
         };
 
         backslash_ru {
             bindings = <&en BACKSLASH>;
-            key-positions = <35 49>;
+            key-positions = <49 48>;
             layers = <1>;
         };
 
