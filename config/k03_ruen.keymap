@@ -160,7 +160,7 @@
                 <&macro_wait_time 50>,
                 <&kp ESC &kp ESC &kp LG(F)>,
                 <&macro_wait_time 50>,
-                <&kp S &kp A &kp V &kp E &kp D &kp SPACE &kp M>,
+                <&kp K &kp O &kp T &kp I &kp F &kp Y &kp SPACE &kp S &kp E &kp R>,
                 <&macro_wait_time 300>,
                 <&kp ENTER>,
                 <&macro_wait_time 100>,
