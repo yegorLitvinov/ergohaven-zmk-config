@@ -157,14 +157,18 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(LA(LC(G)))>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 50>,
                 <&kp ESC &kp ESC &kp LG(F)>,
-                <&macro_wait_time 100>,
-                <&kp S &kp A &kp V &kp E &kp D &kp SPACE &kp M &kp E &kp S &kp S &kp A &kp G &kp E &kp S>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 50>,
+                <&kp S &kp A &kp V &kp E &kp D &kp SPACE &kp M>,
+                <&macro_wait_time 300>,
                 <&kp ENTER>,
                 <&macro_wait_time 100>,
-                <&to_ru &kp LS(G) &kp H &kp B &kp D &kp T &kp N &to_en>;
+                <&layer_ru>,
+                <&macro_wait_time 50>,
+                <&kp LS(G) &kp H &kp B &kp D &kp T &kp N>,
+                <&macro_wait_time 50>,
+                <&layer_en>;
 
             label = "HELLO_KOTIFY";
         };
