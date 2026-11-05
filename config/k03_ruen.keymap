@@ -164,11 +164,11 @@
                 <&macro_wait_time 300>,
                 <&kp ENTER>,
                 <&macro_wait_time 100>,
-                <&layer_ru>,
+                <&kp LS(LC(N2))>,
                 <&macro_wait_time 50>,
                 <&kp LS(G) &kp H &kp B &kp D &kp T &kp N>,
                 <&macro_wait_time 50>,
-                <&layer_en>;
+                <&kp LS(LC(N1))>;
 
             label = "HELLO_KOTIFY";
         };
