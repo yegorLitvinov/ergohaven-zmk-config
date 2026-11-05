@@ -151,6 +151,23 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        hello_kotify: hello_kotify {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(LA(LC(G)))>,
+                <&macro_wait_time 100>,
+                <&kp ESC &kp ESC &kp LG(F)>,
+                <&macro_wait_time 100>,
+                <&kp S &kp A &kp V &kp E &kp D &kp SPACE &kp M &kp E &kp S &kp S &kp A &kp G &kp E &kp S>,
+                <&macro_wait_time 500>,
+                <&kp ENTER>,
+                <&macro_wait_time 100>,
+                <&to_ru &kp LS(G) &kp H &kp B &kp D &kp T &kp N &to_en>;
+
+            label = "HELLO_KOTIFY";
+        };
     };
 
     keymap {
